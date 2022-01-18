@@ -10,7 +10,8 @@ require 'vendor/autoload.php';
  * - client for scoro
  *      - auth
  *      - check company
- * - parsing xml
- *      - by rows
+ * + parsing xml
+ *      + by rows
+ * + saving to csv
  **/
 
