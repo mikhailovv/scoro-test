@@ -1,6 +1,11 @@
+
+
+
 Install application
 ```
-php composer install
+git clone git@github.com:mikhailovv/scoro-test.git scoro
+cd scoro
+composer install
 ```
 
 Copy .env.dev to .env and fill fields

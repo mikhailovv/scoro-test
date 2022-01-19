@@ -2,11 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Scoro\Infrastructure;
+namespace Scoro\Tests\Infrastructure;
 
 use PHPUnit\Framework\TestCase;
 use Scoro\DTO\Company;
 use Scoro\Enum\CheckResult;
+use Scoro\Infrastructure\Configuration;
+use Scoro\Infrastructure\ScoroChecker;
+use Scoro\Tests\Mock\MockScoroHttpClient;
 
 class ScoroHttpClientTest extends TestCase
 {
@@ -15,7 +18,7 @@ class ScoroHttpClientTest extends TestCase
 
         $configuration = new Configuration(dirname(__FILE__) .'/../../.env');
         $checker = new ScoroChecker(
-            new ScoroHttpClient(
+            new MockScoroHttpClient(
                 $configuration->getBaseUrl(),
                 $configuration->getApiKey(),
                 $configuration->getCompanyAccountId()

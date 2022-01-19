@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Scoro\Test\Infrastructure;
+namespace Scoro\Tests\Infrastructure;
 
 use PHPUnit\Framework\TestCase;
 use Scoro\DTO\Company;

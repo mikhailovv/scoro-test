@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Scoro\Infrastructure;
+namespace Scoro\Tests\Infrastructure;
 
 use PHPUnit\Framework\TestCase;
+use Scoro\Infrastructure\XmlReader;
 
 class XmlReaderTest extends TestCase
 {
