@@ -15,5 +15,10 @@
             "email": "vmikhailov2015@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-simplexml": "*",
+        "ext-libxml": "*",
+        "ext-curl": "*",
+        "ext-xmlreader": "*"
+    }
 }

@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Scoro\Tests\Mock;
 
-class MockXmlReader implements \Scoro\Infrastructure\Reader
+use Scoro\Infrastructure\Reader;
+
+class MockXmlReader implements Reader
 {
     public const FIRST_COMPANY_NAME = 'Airtight Holdings';
     public const FIRST_COMPANY_ID_CODE = '123456';

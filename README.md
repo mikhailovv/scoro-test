@@ -16,3 +16,13 @@ vendor/bin/phpunit tests
 ```
 
 Use application
+
+``
+php index.php -i {path to source.xml} -o {path to destination.csv} 
+``
+
+
+For example:
+```
+php index.php -i tests/data/input.xml -o result.csv
+```
