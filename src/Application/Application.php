@@ -25,6 +25,9 @@ class Application
             $company = CompanyFactory::createFromXml($xmlRow);
             $checkResult = $this->checker->check($company);
             $this->writer->addRow($checkResult);
+
+            echo '#';
         }
+        echo PHP_EOL.'done'.PHP_EOL;
     }
 }
